@@ -1,0 +1,40 @@
+.register-login-header {
+  background: url(https://abs.twimg.com/a/1453968535/img/t1/lohp_streams_header_bg_v4.png);
+  background-size: 100%;
+  padding: .75rem;
+}
+
+.register-login-logo {
+  width: 75%;
+}
+
+.header-link {
+  font-size: .75rem;
+}
+
+.join-twitter {
+  font-weight: 100;
+  margin: 7rem 0 1rem 0;
+  padding: 0 1rem;
+  font-size: 1.85rem;
+}
+
+.register-login-button {
+  background: #55ACEE;
+}
+
+.privacy-policy {
+  margin: 0 1rem;
+  font-size: .75rem;
+  color: #8899a6;
+  line-height: 1.25rem;
+}
+
+.privacy-policy-link {
+  color: #2b7bb9;
+  text-decoration: none;
+}
+
+.privacy-policy-link:hover {
+  text-decoration: underline;
+}
