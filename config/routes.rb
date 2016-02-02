@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'static_pages#landing_page'
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :tweets, except: [:new, :edit]
   resources :hashtags, except: [:new, :edit]
 
