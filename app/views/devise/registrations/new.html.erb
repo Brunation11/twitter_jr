@@ -1,0 +1,36 @@
+<div class="col-12 register-login-header">
+  <div class="col-10 col-offset-1">
+    <div class="col-2 col-offset-5 center">
+      <div class="col-2 col-offset-6">
+        <%= link_to (image_tag "logo.png", class: "register-login-logo"), root_path %>
+      </div>
+    </div>
+    <div class="col-5 right white">
+      <%= link_to "Language: English", "#", class: "white link header-link" %> <%= link_to "Have and account? Log in", "#", class: "white link header-link" %>
+    </div>
+  </div>
+</div>
+
+<div class="col-4 col-offset-4">
+  <h2 class="join-twitter">Join Twitter Today</h2>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= devise_error_messages! %>
+
+      <%= f.text_field :first_name, placeholder: "Full name", autofocus: true, class: "form-field" %>
+
+      <%= f.email_field :email, placeholder: "Email", autofocus: true, class: "form-field" %>
+
+      <%= f.password_field :password, placeholder: "Password #{@minimum_password_length} characters minimum",autocomplete: "off", class: "form-field" %>
+
+      <%= f.password_field :password_confirmation, placeholder: "Confirm password", autocomplete: "off", class: "form-field" %>
+
+      <%= f.submit "Sign up", class: "form-field register-login-button white" %>
+  <% end %>
+
+  <div class="privacy-policy">
+    <p>By signing up, you agree to the <a class="privacy-policy-link" href="#"><span>Terms of Service</span></a> and <a class="privacy-policy-link" href="#"><span>Privacy Policy</span></a>, including <a class="privacy-policy-link" href="#"><span>Cookie Use</span></a>. Others will be able to find you by email or phone number when provided.</p>
+
+    <a class="privacy-policy-link" href="#"><span>Advanced options</span></a>
+  </div>
+</div>
