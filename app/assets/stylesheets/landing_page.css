@@ -1,0 +1,46 @@
+.landing-page-header {
+  background: url(https://abs.twimg.com/a/1453968535/img/t1/lohp_streams_header_bg_v4.png);
+  background-size: 100%;
+  padding: 2rem;
+}
+
+.navbar-button {
+  border: 1px solid #fff;
+  border-opacity: .3;
+  border-radius: 5px;
+  padding: .5rem 2rem;
+  margin: .25rem;
+  font-size: 1.10rem;
+}
+
+.navbar-button:hover {
+  background: #fff;
+}
+
+.active {
+  background: rgba(255,255,255,0.3);
+  border: 1px solid transparent;
+}
+
+.header-1 {
+  font-weight: 100;
+  font-size: 1.85rem;
+  margin: .5rem 0 0 0;
+}
+
+.header-2 {
+  font-weight: 200;
+  font-size: 1.45rem;
+  opacity: .7;
+  margin: 0 0 3rem 0;
+}
+
+.landing-page-nav-tab {
+  padding: 1.25rem 2.25rem;
+  border: 1px solid #e1e8ed;
+  color: #55acee;
+}
+
+.landing-page-nav-tab:hover {
+  border-bottom: .25rem solid #55acee;
+}
