@@ -5,33 +5,71 @@
 }
 
 .register-login-logo {
-  width: 75%;
+  width: 12%;
+  margin-top: .5rem;
 }
 
-.header-link {
-  font-size: .75rem;
+.register-login-header-link {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.register-login-header-link:hover {
+  background: none;
+  border: none;
+  color: #1DA1F2;
+  text-decoration: underline;
+}
+
+.btn-default:active:hover, .btn-default:active:focus, .btn-default:active.focus, .btn-default.active:hover, .btn-default.active:focus, .btn-default.active.focus, .open > .btn-default.dropdown-toggle:hover, .open > .btn-default.dropdown-toggle:focus, .open > .btn-default.dropdown-toggle.focus {
+  background: none;
+  border: none;
+}
+
+.dropdown-element {
+  margin: 0;
+  width: 49%;
+  display: inline-block;
+}
+
+.login-link {
+  margin-top: .6rem;
+  color: #fff;
+}
+
+.login-link:hover {
+  color: #1DA1F2;
+
 }
 
 .join-twitter {
   font-weight: 100;
-  margin: 7rem 0 1rem 0;
-  padding: 0 1rem;
-  font-size: 1.85rem;
+  margin: 11rem 0 1rem 0;
+  padding: 0;
+  font-size: 2.95rem;
 }
 
 .register-login-button {
-  background: #55ACEE;
+  width: 100%;
+  height: 4rem;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #E1E8ED;
+  color: #fff;
+  background: #1DA1F2;
+  font-size: 1.75rem;
 }
 
 .privacy-policy {
   margin: 0 1rem;
-  font-size: .75rem;
+  font-size: 1.25rem;
   color: #8899a6;
-  line-height: 1.25rem;
+
 }
 
 .privacy-policy-link {
-  color: #2b7bb9;
+  color: #1B95E0;
   text-decoration: none;
 }
 
