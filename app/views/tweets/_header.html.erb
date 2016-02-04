@@ -1,0 +1,30 @@
+<div class="col-md-5 tweets-index-header-left">
+  <div class="col-md-3">
+    Home
+  </div>
+  <div class="col-md-3">
+    Moments
+  </div>
+  <div class="col-md-3">
+    Notifications
+  </div>
+  <div class="col-md-3">
+    Messages
+  </div>
+</div>
+
+<div class="col-md-2">
+    <%= link_to (image_tag "logo-blue.png", class: "logo"), authenticated_root_path %>
+</div>
+
+<div class="col-md-5">
+  <div class="col-md-7 col-md-offset-1">
+    <input class="search" placeholder="Search Twitter" />
+  </div>
+  <div class="col-md-1 tweets-index-header-avatar">
+    <%= image_tag "avatar.png", class: "user-meta-container-avatar" %>
+  </div>
+  <div class="col-md-2 tweet-button">
+    Tweet
+  </div>
+</div>
