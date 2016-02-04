@@ -1,20 +1,30 @@
 .landing-page-header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.header {
   background: url(https://abs.twimg.com/a/1453968535/img/t1/lohp_streams_header_bg_v4.png);
   background-size: 100%;
-  padding: 2rem;
+  padding-top: 2.75rem;
+  color: #fff;
+  height: 21rem;
 }
 
-.navbar-button {
-  border: 1px solid #fff;
-  border-opacity: .3;
+.button {
+  border: 1px solid rgba(255,255,255, .3);
   border-radius: 5px;
-  padding: .5rem 2rem;
-  margin: .25rem;
-  font-size: 1.10rem;
+  padding: .75rem 3.5rem;
+  margin: 1rem .15rem;
+  font-size: 1.75rem;
+  color: #fff;
 }
 
-.navbar-button:hover {
+.button:hover {
   background: #fff;
+  text-decoration: none;
+  color: #55acee;;
 }
 
 .active {
@@ -24,23 +34,35 @@
 
 .header-1 {
   font-weight: 100;
-  font-size: 1.85rem;
-  margin: .5rem 0 0 0;
+  font-size: 2.95rem;
+  margin: 1rem 0;
 }
 
 .header-2 {
   font-weight: 200;
-  font-size: 1.45rem;
+  font-size: 2.15rem;
   opacity: .7;
-  margin: 0 0 3rem 0;
+  margin: .5rem 0 8rem 0;
 }
 
-.landing-page-nav-tab {
+.nav {
+  background: #fff;
+}
+
+.nav-tab {
   padding: 1.25rem 2.25rem;
   border: 1px solid #e1e8ed;
   color: #55acee;
+  font-size: 1.5rem;
 }
 
-.landing-page-nav-tab:hover {
+.nav-tab:hover {
   border-bottom: .25rem solid #55acee;
+  text-decoration: none;
+  color: #55acee;
+}
+
+.landing-page-main-content {
+  margin-top: 25rem;
+  padding: 5rem 0;
 }
