@@ -1,0 +1,12 @@
+
+<div id="tweets-container-tweet-form" class="col-md-12 tweets-container-tweet-form tweet-form-field">
+  <div class="col-md-1 tweets-container-tweet-form-avatar">
+    <%= image_tag "avatar.png", class: "user-meta-container-avatar" %>
+  </div>
+  <div class="col-md-11 no-padding">
+    <%= form_for :tweet do |f| %>
+      <%= f.text_field :content, placeholder: "Whats happening?", class: "form-field", id: "tweet-form-field" %>
+      <%= f.submit 'Tweet', class: "tweets-container-tweet-form-button pull-right" %>
+    <% end %>
+  </div>
+</div>
