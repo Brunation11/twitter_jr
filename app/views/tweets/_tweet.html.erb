@@ -1,0 +1,6 @@
+<% current_user.followee_tweets.each do |tweet| %>
+  <div class="tweet-container">
+    <p><span class="users-name"><%= tweet.user.full_name %></span> <span class="tweet-container-handle"><%= tweet.user.handle %></span></p>
+    <p><%= tweet.content %></p>
+  </div>
+<% end %>
