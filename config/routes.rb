@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#landing_page'
-  devise_for :users, :controllers => { registrations: 'registrations' }
+  devise_for :users, controllers: { registrations: "registrations"}
+
+  authenticated :user do
+    root 'static_pages#feed', as: :authenticated_root
+  end
+
+  unauthenticated :user do
+    root 'static_pages#landing_page', as: :unauthenticated_root
+  end
+
   resources :tweets, except: [:new, :edit]
   resources :hashtags, except: [:new, :edit]
 
