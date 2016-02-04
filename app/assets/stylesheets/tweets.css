@@ -1,0 +1,167 @@
+.logo {
+  width: 12%;
+}
+
+.tweets-index-header {
+  position: fixed;
+  padding: .5rem;
+  border-bottom: 2px solid #E5E8EA;
+  font-size: 1.35rem;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+
+.tweets-index-header-left {
+  margin-top: .5rem;
+  font-weight: 600;
+  color: #66757F;
+}
+
+.search {
+  width: 100%;
+  height: 3rem;
+  background: #F5F8FA;
+  border-radius: 20px;
+  border: 1px solid #E5E8EA;
+  text-indent: 1rem;
+}
+
+.tweets-index-header-avatar {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 1rem 0 0;
+}
+
+.tweet-button {
+  background: #6EA763;
+  padding: .45rem 1rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tweets-main-content {
+  background: #F5F8FA;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.tweets-content-left {
+}
+
+.user-meta-container {
+  height: 22rem;
+  background: #fff;
+  border-radius: 5px;
+  color: #8899A6;
+}
+
+.user-meta-container-banner {
+  height: 45%;
+  padding: 2rem;
+}
+
+.user-meta-container-background {
+  width: 92%;
+  float: right;
+}
+
+.user-meta-container-avatar-container {
+  position: absolute;
+  margin: 7.5rem 0 0 1rem;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  padding: .5rem;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.user-meta-container-avatar {
+  position: relative;
+  width: 100%;
+}
+
+.user-meta-container-namefield {
+  border: 1px solid #E1E8ED;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0;
+}
+
+.user-meta-container-name {
+  float: right;
+}
+
+.users-name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000;
+  margin: 1rem 0 0 0;
+}
+
+.primary-green {
+  color: #4A913C;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.user-stats {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tweets-container {
+  border-radius: 5px;
+  border: 1px solid #E1E8ED;
+  background: #fff;
+}
+
+.tweets-container-tweet-form-avatar {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  padding: .30rem;
+  border-radius: 5px;
+  background: #fff;
+  margin: 1.75rem 1.55rem 0 0;
+}
+
+.tweets-container-tweet-form {
+  background: #ECF4EB;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 0 1rem 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.tweet-form-field {
+  height: 7rem;
+  overflow: hidden;
+}
+
+.tweets-container-tweet-form-button {
+  background: #4A913C;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+.tweet-container {
+  border-bottom: 1px solid #E1E8ED;
+  padding: 1rem;
+}
+
+.tweet-container-handle {
+  color: #8899A6;
+}
+
