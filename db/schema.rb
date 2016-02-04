@@ -42,8 +42,7 @@ ActiveRecord::Schema.define(version: 20160201185223) do
   add_index "tweets", ["user_id"], name: "index_tweets_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "first_name",                          null: false
-    t.string   "last_name",                           null: false
+    t.string   "full_name",                           null: false
     t.string   "username",                            null: false
     t.string   "email",                               null: false
     t.string   "handle",                              null: false
