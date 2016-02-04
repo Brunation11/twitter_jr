@@ -1,3 +1,31 @@
-<h1>Hello <%= current_user.username %></h1>
+<div class="row tweets-index-header text-center">
+  <%= render 'header' %>
+</div>
+
+<div class"row">
+  <div class="tweets-main-content">
+
+    <div class="col-md-3">
+      <div class="col-md-11 col-md-offset-1 tweets-content-left no-padding">
+
+        <div class="user-meta-container">
+          <%= render 'user_meta_container' %>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-6 tweets-container no-padding">
+
+      <%= render 'form' %>
+
+      <%= render 'tweet' %>
+    </div>
+
+  </div>
+</div>
+
+
+
 
 <%= link_to "logout", destroy_user_session_path, method: "delete" %>
