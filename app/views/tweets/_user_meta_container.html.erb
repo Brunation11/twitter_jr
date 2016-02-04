@@ -1,0 +1,26 @@
+<div class="user-meta-container-avatar-container">
+  <%= image_tag "avatar.png", class: "user-meta-container-avatar" %>
+</div>
+<div class="user-meta-container-banner">
+  <%= link_to (image_tag "user_dash_background.png", class: "user-meta-container-background"), "#" %>
+</div>
+<div class="col-md-12 user-meta-container-namefield">
+  <div class="col-md-9 col-md-offset-3 user-meta-container-name">
+    <p class="users-name"><%= current_user.full_name %></p>
+    <p><%= current_user.handle %></p>
+  </div>
+  <div class="user-stats">
+    <div class="col-md-4 no-padding">
+      <p>TWEETS</p>
+      <p class="primary-green"><%= current_user.tweets.count %></p>
+    </div>
+    <div class="col-md-4 no-padding">
+      <p>FOLLOWING</p>
+      <p class="primary-green"><%= current_user.followees.count %></p>
+    </div>
+    <div class="col-md-4 no-padding">
+      <p>FOLLOWERS</p>
+      <p class="primary-green"><%= current_user.followers.count %></p>
+    </div>
+  </div>
+</div>
