@@ -10,8 +10,10 @@ Rails.application.routes.draw do
     root 'static_pages#landing_page', as: :unauthenticated_root
   end
 
+  resources :relationships, only: [:create, :destroy]
   resources :tweets, except: [:new, :edit]
   resources :hashtags, except: [:new, :edit]
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
