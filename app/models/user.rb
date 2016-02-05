@@ -33,4 +33,12 @@ class User < ActiveRecord::Base
   def set_handle
     self.handle = "@#{self.full_name.split.join("_")}"
   end
+
+  def follow(user)
+    self.followees << user if !self.followees.include? user
+  end
+
+  def unfollow(user)
+    self.followees.delete(user) if self.followees.include? user
+  end
 end
