@@ -4,6 +4,7 @@ class TweetsController < ApplicationController
 
   def index
     @all_tweets = current_user.tweets
+    @all_users = User.where.not(id: current_user.id)
   end
 
   def show
