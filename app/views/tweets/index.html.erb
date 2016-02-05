@@ -22,10 +22,19 @@
       <%= render 'tweet' %>
     </div>
 
+    <div class="col-md-3">
+      <div class="col-md-11 tweets-content-right no-padding">
+
+        <div class="who-to-follow-container">
+          <%= render partial: 'who_to_follow_container', locals: {all_users: @all_users} %>
+        </div>
+
+      </div>
+    </div>
+
+    <%= link_to "logout", destroy_user_session_path, method: "delete" %>
   </div>
 </div>
 
 
 
-
-<%= link_to "logout", destroy_user_session_path, method: "delete" %>
