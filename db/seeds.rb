@@ -6,31 +6,35 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# 10.times do
-#   User.create(
-#     first_name: Faker::Name.first_name,
-#     last_name: Faker::Name.last_name,
-#     email: Faker::Internet.email,
-#     username: Faker::Internet.user_name(10),
-#     password: Faker::Internet.password(10),
-#     handle: Faker::Hipster.word
-#   )
-# end
+100.times do
+  User.create(
+    full_name: Faker::Name.name,
+    email: Faker::Internet.email,
+    password: Faker::Internet.password(10),
+    handle: Faker::Hipster.word
+  )
+end
 
 users = User.all
 
-10.times do
+50.times do
   users.each do |user|
     u = users.sample
-    u.followees << user
-    user.followers << u
+    u.follow(user)
   end
 end
 
-10.times do
+hashtags = []
+
+50.times do
+  hashtags << "##{Faker::Hipster.word}"
+end
+
+
+50.times do
   users.each do |user|
     user.tweets.create(
-      content: (Faker::Hipster.sentence + "#test")
+      content: (Faker::Hipster.sentence + hashtags.sample(rand(1..5)).join(" "))
     )
   end
 end
