@@ -1,0 +1,15 @@
+<p class="who-to-follow">Who to follow . <%= link_to "Refresh", "#", class: "who-to-follow-container-links" %> . <%= link_to "View all", "#", class: "who-to-follow-container-links" %></p>
+
+<% all_users.each do |user| %>
+  <div class="who-to-follow-user-div">
+    <span class="who-to-follow-user-div-name"><%= user.full_name %></span> <span class="who-to-follow-user-div-handle"><%= user.handle %></span>
+
+    <div class="follow-unfollow-buttons">
+      <% if current_user.followees.include? user %>
+        <%= render partial: 'users/unfollow', locals: {user: user} %>
+      <% else %>
+        <%= render partial: 'users/follow', locals: {user: user} %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
