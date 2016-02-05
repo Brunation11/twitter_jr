@@ -1,15 +1,15 @@
 <div class="col-md-5 tweets-index-header-left">
-  <div class="col-md-3">
-    Home
+  <div class="col-md-3 tweets-header-tab">
+    <%= link_to "Home", authenticated_root_path, class: "tweets-header-link" %>
   </div>
   <div class="col-md-3">
-    Moments
+    <%= link_to "Moments", "#", class: "tweets-header-link" %>
   </div>
   <div class="col-md-3">
-    Notifications
+    <%= link_to "Notifications", "#", class: "tweets-header-link" %>
   </div>
   <div class="col-md-3">
-    Messages
+    <%= link_to "Messages", "#", class: "tweets-header-link" %>
   </div>
 </div>
 
